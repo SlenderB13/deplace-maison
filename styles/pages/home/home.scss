@@ -1,0 +1,54 @@
+.home {
+  @extend %page;
+
+  font-family: $font-glamore;
+  font-size: 20rem;
+  word-break: break-all;
+
+  &--active {
+    @extend %page--active;
+  }
+}
+
+.home__content {
+  @extend %content;
+  height: 150vh;
+}
+
+.home__gallery__media {
+    width: 45rem;
+    height: 30rem;
+    margin: 4rem 4.34rem;
+    position: absolute;
+
+    &:nth-child(1) {
+      top: 10rem;
+      left: 20rem;
+    }
+
+    &:nth-child(2) {
+      top: 10rem;
+      left: 100rem;
+    }
+
+    &:nth-child(3) {
+      top: 50rem;
+      left: 20rem;
+    }
+
+    &:nth-child(4) {
+      top: 50rem;
+      left: 100rem;
+    }
+
+    &:nth-child(5) {
+      top: 100rem;
+      left: 20rem;
+    }
+}
+
+.home__gallery__media__image {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}

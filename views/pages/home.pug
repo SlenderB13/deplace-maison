@@ -1,0 +1,15 @@
+extends ../base.pug
+
+block variables
+  - var template = 'home'
+
+block body
+  .home
+    | Maitê Lima
+
+    .home__content
+
+      .home__gallery
+        each image in gallery
+          figure.home__gallery__media
+            img.home__gallery__media__image(src=image)
