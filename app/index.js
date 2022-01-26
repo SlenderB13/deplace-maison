@@ -28,7 +28,7 @@ class App {
     this.template = this.content.dataset.template
 
     this.createPreloader()
-    this.createCanvas()
+    /*     this.createCanvas() */
 
     this.pages = new Map()
     this.pages.set('about', new About())

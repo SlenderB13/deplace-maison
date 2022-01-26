@@ -5,11 +5,72 @@ block variables
 
 block body
   .home
-    | Maitê Lima
 
     .home__content
+      .home__titles
+        p.home__titles__title SPRING, <br>
+        p.home__titles__title SUMMER
 
       .home__gallery
         each image in gallery
           figure.home__gallery__media
             img.home__gallery__media__image(src=image)
+
+      .home__explore__button
+        a.home__explore__button__link(href='/about') EXPLORE
+
+      .home__marquee
+          p.home__marquee__text DO NOT SCROLL
+          p.home__marquee__text <span>&#8226;</span>
+          p.home__marquee__text DEPLACE SHOP
+          p.home__marquee__text <span>&#8226;</span>
+          p.home__marquee__text DO NOT SCROLL
+          p.home__marquee__text <span>&#8226;</span>
+          p.home__marquee__text DEPLACE SHOP
+          p.home__marquee__text <span>&#8226;</span>
+          p.home__marquee__text DO NOT SCROLL
+          p.home__marquee__text <span>&#8226;</span>
+          p.home__marquee__text DO NOT SCROLL
+          p.home__marquee__text <span>&#8226;</span>
+          p.home__marquee__text DEPLACE SHOP
+          p.home__marquee__text <span>&#8226;</span>
+          p.home__marquee__text DO NOT SCROLL
+          p.home__marquee__text <span>&#8226;</span>
+
+      .home__extras__about-us
+        p.home__extras__about-us__text
+          | An independent brand of <br>
+          | urban trekking shoes and accessories <br>
+          | that comes from a convergence of <br>
+          | arts and personalities. <br>
+      .home__extras__preview
+        each image in gallery
+          figure.home__extras__preview__item
+            img.home__extras__preview__item__image(src=image)
+      .home__extras__shop__button
+        a.home__extras__shop__button__link(href='/') SHOP ALL
+
+      .home__footer
+        .home__footer__top
+          .home__footer__top__newsletter
+            p.home__footer__top__newsletter__text SUBSCRIBE TO OUR NEWSLETTER
+          .home__footer__top__info
+            p.home__footer__top__info__title INFO
+            a.home__footer__top__info__link FAQ
+            a.home__footer__top__info__link RETURNS
+            a.home__footer__top__info__link CONTACT
+          .home__footer__top__policy
+            p.home__footer__top__policy__title POLICY
+            a.home__footer__top__policy__link TERMS
+            a.home__footer__top__policy__link PRIVACY
+            a.home__footer__top__policy__link COOKIES
+          .home__footer__top__back
+
+        .home__footer__bottom
+          .home__footer__bottom__newsletter
+            input.home__footer__bottom__newsletter__input(type='email', placeholder='email address')
+          .home__footer__bottom__credits
+            a credits
+          .home__footer__bottom__rights
+            p <span>&#169</span> 2022 DÉPLACÉ MAISON CLONE
+          .home__footer__bottom__media

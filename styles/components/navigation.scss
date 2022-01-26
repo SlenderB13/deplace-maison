@@ -3,8 +3,24 @@
 
   pointer-events: none;
   z-index: z('navigation');
+
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+
+  padding: 2.5rem;
+
 }
 
 .navigation__link {
+  font-family: $font-oswald;
+  font-size: 2.4rem;
   pointer-events: auto;
+  color: #141414;
+}
+
+.navigation__home {
+  font-size: 3.4rem;
+  letter-spacing: -1px;
+  color: #141414;
 }

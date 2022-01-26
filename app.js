@@ -23,7 +23,7 @@ app.get('/', async (request, response) => {
   const medias = home.results[0].data
   const gallery = []
 
-  for (let i = 0; i <= 4; i++) {
+  for (let i = 0; i <= 1; i++) {
     const image = medias.gallery[i].image.url
     gallery.push(image)
   }
