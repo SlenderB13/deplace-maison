@@ -39,14 +39,15 @@ block body
 
       .home__extras__about-us
         p.home__extras__about-us__text
+          span.home__extras__about-us__text_span WHO WE ARE
           | An independent brand of <br>
           | urban trekking shoes and accessories <br>
           | that comes from a convergence of <br>
           | arts and personalities. <br>
       .home__extras__preview
-        each image in gallery
+        each product in products
           figure.home__extras__preview__item
-            img.home__extras__preview__item__image(src=image)
+            img.home__extras__preview__item__image(src='#')
       .home__extras__shop__button
         a.home__extras__shop__button__link(href='/') SHOP ALL
 

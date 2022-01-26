@@ -19,7 +19,9 @@ app.get('/', async (request, response) => {
   const home = await api.query(Prismic.Predicates.at('document.type', 'home'), {
     orderings: '[images]'
   })
+  const { results: products } = await api.query(Prismic.Predicates.at('document.type', 'product'))
 
+  // treating home gallery data
   const medias = home.results[0].data
   const gallery = []
 
@@ -28,9 +30,12 @@ app.get('/', async (request, response) => {
     gallery.push(image)
   }
 
+  // treating home products data
+
   response.render('pages/home', {
     home,
-    gallery
+    gallery,
+    products
   })
 })
 

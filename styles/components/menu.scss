@@ -1,0 +1,23 @@
+.menu {
+
+  pointer-events: none;
+  z-index: z('navigation');
+
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  justify-content: space-between;
+
+  padding: 2.5rem;
+
+  position: fixed;
+  bottom: 0;
+}
+
+.menu__item {
+  font-family: $font-oswald;
+  font-size: 2.4rem;
+  pointer-events: auto;
+  color: #141414;
+}

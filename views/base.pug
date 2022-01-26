@@ -25,6 +25,7 @@ if !isAJAX
       .content#content(data-template=template)
         block body
 
+      include ./partials/menu
       include ./partials/noscript
 
       script(async src=getVersionedPath('/main.js'))

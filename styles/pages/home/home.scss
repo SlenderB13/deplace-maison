@@ -14,21 +14,22 @@
 .home__content {
 /*   @extend %content; */
 
-  height: 400rem;
+  height: 440rem;
 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
 
-  padding-top: 12rem;
+  padding: 12rem 0 0 25rem;
 }
 
 .home__titles {
-  width: 120rem;
-  font-size: 26rem;
-  font-weight: bolder;
-  line-height: 26rem;
+  width: 140rem;
+  font-family: $font-michroma;
+  font-size: 18rem;
+  letter-spacing: -1.5rem;
+  line-height: 22rem;
   color: #141414;
 }
 
@@ -39,19 +40,19 @@
 }
 
 .home__gallery {
+  width: 140rem;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .home__gallery__media {
-  height: 75rem;
+  height: 85rem;
   width: 60rem;
+  border: 3px solid #141414;
 }
 
 .home__gallery__media__image {
-  height: inherit;
-  width: inherit;
   object-fit: cover;
 }
 
@@ -59,7 +60,8 @@
   width: 120rem;
   text-align: end;
   color: #141414;
-  font-size: 4.4rem;
+  font-family: $font-michroma;
+  font-size: 3rem;
   text-align: end;
 }
 
@@ -89,34 +91,42 @@
 } */
 
 .home__extras__about-us {
-  text-align: center;
+  text-align: justify;
 }
 
 .home__extras__about-us__text {
-  font-size: 5rem;
+  font-size: 8rem;
   color: #141414;
 }
 
+.home__extras__about-us__text_span {
+  font-size: 3rem;
+  text-decoration: underline;
+}
+
 .home__extras__preview {
+  width: 140rem;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .home__extras__preview__item {
   height: 70rem;
   width: 60rem;
+  border: 3px solid #141414;
 }
 
 .home__extras__preview__item__image {
-  width: inherit;
   height: inherit;
+  width: inherit;
   object-fit: cover;
 }
 
 .home__extras__shop__button {
   width: 120rem;
-  font-size: 4.4rem;
+  font-family: $font-michroma;
+  font-size: 3rem;
   color: #141414;
   text-align: end;
 }
@@ -125,20 +135,23 @@
 }
 
 .home__footer {
-  width: 100%;
+  width: 200rem;
 
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  background-color: #e7d6c4;
+  background-color: #f7f4ea;
 
   font-size: 5rem;
   color: #141414;
 
   padding: 4rem 4rem;
+
+  margin-right: 20rem;
 }
 
 .home__footer__top {
+  height: 40rem;
   display: flex;
 }
 
