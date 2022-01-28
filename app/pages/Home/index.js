@@ -40,7 +40,7 @@ export default class extends Page {
       ease: 'Power3.easeInOut',
       duration: 0.5,
       opacity: 0,
-      y: 200,
+      y: 100,
       stagger: 0.1
     })
 
