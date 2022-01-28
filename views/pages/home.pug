@@ -8,8 +8,8 @@ block body
 
     .home__content
       .home__titles
-        p.home__titles__title SPRING, <br>
-        p.home__titles__title SUMMER
+        h1.home__titles__title.home__title(data-splitting) SPRING, <br>
+        h1.home__titles__title.home__subtitle(data-splitting) SUMMER
 
       .home__gallery
         each image in gallery
@@ -20,6 +20,7 @@ block body
         a.home__explore__button__link(href='/about') EXPLORE
 
       .home__marquee
+        .home__marquee__wrapper
           p.home__marquee__text DO NOT SCROLL
           p.home__marquee__text <span>&#8226;</span>
           p.home__marquee__text DEPLACE SHOP
@@ -29,6 +30,14 @@ block body
           p.home__marquee__text DEPLACE SHOP
           p.home__marquee__text <span>&#8226;</span>
           p.home__marquee__text DO NOT SCROLL
+          p.home__marquee__text <span>&#8226;</span>
+          p.home__marquee__text DO NOT SCROLL
+          p.home__marquee__text <span>&#8226;</span>
+          p.home__marquee__text DEPLACE SHOP
+          p.home__marquee__text <span>&#8226;</span>
+          p.home__marquee__text DO NOT SCROLL
+          p.home__marquee__text <span>&#8226;</span>
+          p.home__marquee__text DEPLACE SHOP
           p.home__marquee__text <span>&#8226;</span>
           p.home__marquee__text DO NOT SCROLL
           p.home__marquee__text <span>&#8226;</span>
