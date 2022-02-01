@@ -14,7 +14,7 @@
 .home__content {
 /*   @extend %content; */
 
-  height: 440rem;
+  height: 350rem;
 
   display: flex;
   flex-direction: column;
@@ -51,14 +51,14 @@
 }
 
 .home__gallery__media {
-  height: 85rem;
-  width: 60rem;
+  height: 80.5rem;
+  width: 65rem;
   border: 3px solid #141414;
 }
 
 .home__gallery__media__image {
-  height: 84.5rem;
-  width: 60rem;
+  height: 80rem;
+  width: 65rem;
   object-fit: cover;
 }
 

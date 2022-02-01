@@ -7,7 +7,31 @@
   transform-origin: 0 0;
   z-index: z('preloader');
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  background-color: #1a1a1a;
+  color: #fff;
+
+  font-family: $font-michroma;
+
   &--loaded {
     transform: scaleY(0);
   }
+}
+
+.preloader__header {
+  font-size: 2rem;
+}
+
+.preloader__number {
+  font-family: $font-oswald;
+  font-size: 44rem;
+  letter-spacing: -1rem;
+}
+
+.preloader__footer {
+  font-size: 2rem;
 }

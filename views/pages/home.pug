@@ -14,7 +14,7 @@ block body
       .home__gallery
         each image in gallery
           figure.home__gallery__media
-            img.home__gallery__media__image(src=image)
+            img.home__gallery__media__image(src=image, data-src=image)
 
       .home__explore__button
         a.home__explore__button__link(href='/about') EXPLORE
@@ -53,12 +53,6 @@ block body
           | urban trekking shoes and accessories <br>
           | that comes from a convergence of <br>
           | arts and personalities. <br>
-      .home__extras__preview
-        each product in products
-          figure.home__extras__preview__item
-            img.home__extras__preview__item__image(src='#')
-      .home__extras__shop__button
-        a.home__extras__shop__button__link(href='/') SHOP ALL
 
       .home__footer
         .home__footer__top
